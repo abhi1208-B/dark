@@ -1,7 +1,7 @@
 from turtle import Turtle, Screen
 import random
 
-is_race = False
+is_raceing = False
 
 screen = Screen()
 screen.setup(500, 400)
@@ -17,8 +17,8 @@ for turtle_index in range(0, 6):
     new_turtle.color(colo[turtle_index])
     all_turtle.append(new_turtle)
 if user_bet:
-    is_race = True
-while is_race:
+    is_raceing = True
+while is_raceing:
       for turtle in all_turtle:
           if turtle.xcor()>230 :
               is_race=False
